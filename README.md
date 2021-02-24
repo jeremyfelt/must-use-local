@@ -12,6 +12,10 @@ An MU Plugin that makes a few adjustments to make local development friendlier (
 * Disable SSL verification locally to avoid any annoying issues with self-signed certs for `.test` domains.
 * Treat requests to local domains as external so that things like cron actually work.
 
+### Mail
+
+* Filter PHPMailer so that Mailhog is used to send (and capture) emails locally.
+
 ### Jetpack
 
 #### Related Posts
