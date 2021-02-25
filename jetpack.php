@@ -15,6 +15,10 @@ add_filter( 'jetpack_relatedposts_returned_results', __NAMESPACE__ . '\filter_re
  * Prevent Jetpack SSO locally.
  */
 function remove_jetpack_sso() {
+	if ( false === class_exists( 'Jetpack_SSO' ) || false === class_exists( 'Jetpack_Protect_Module' ) ) {
+		return;
+	}
+
 	$jetpack_sso = \Jetpack_SSO::get_instance();
 	$jetpack_protect = \Jetpack_Protect_Module::instance();
 
