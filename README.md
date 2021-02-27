@@ -5,7 +5,7 @@ An MU Plugin that makes a few adjustments to make local development friendlier (
 ## Setup
 
 * Clone this directory into `wp-content/mu-plugins/must-use-local/`
-* Setup `mu-plugins/index.php` to load `wp-content/mu-plugins/must-use-local/must-use-local.php` somehow.
+* Setup `mu-plugins/index.php` to load `wp-content/mu-plugins/must-use-local/must-use-local.php` somehow _or_ copy the `mu-autoloader.php` file in this plugin to your `mu-plugins/` directory.
 
 ## Adjustments
 
