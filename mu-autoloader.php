@@ -9,9 +9,9 @@
  * If you're looking at this file in the Must Use Local mu-plugin, and need
  * something like it, copy it to your `wp-content/mu-plugins/` directory.
  */
-$dirs = glob( dirname( __FILE__ ) . '/*' , GLOB_ONLYDIR );
-foreach( $dirs as $dir ) {
-    if( file_exists( $dir . DIRECTORY_SEPARATOR . basename( $dir ) . '.php' ) ) {
-        require( $dir . DIRECTORY_SEPARATOR . basename( $dir ) . '.php' );
-    }
+$dirs = glob( dirname( __FILE__ ) . '/*', GLOB_ONLYDIR );
+foreach ( $dirs as $dir ) {
+	if ( file_exists( $dir . DIRECTORY_SEPARATOR . basename( $dir ) . '.php' ) ) {
+		require $dir . DIRECTORY_SEPARATOR . basename( $dir ) . '.php';
+	}
 }
