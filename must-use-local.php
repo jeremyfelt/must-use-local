@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Must Use Local
  * Description:     Adjustments made locally, but not deployed.
- * Version:         0.0.2
+ * Version:         0.0.3
  */
 
 namespace MustUseLocal;
