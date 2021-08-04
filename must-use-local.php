@@ -18,3 +18,6 @@ require_once __DIR__ . '/jetpack.php';
 
 // Load some local Mail customizations.
 require_once __DIR__ . '/mail.php';
+
+// Load local authorization customizations.
+require_once __DIR__ . '/auth.php';
