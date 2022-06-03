@@ -21,3 +21,6 @@ require_once __DIR__ . '/mail.php';
 
 // Load local authorization customizations.
 require_once __DIR__ . '/auth.php';
+
+// Load local debugging tools.
+require_once __DIR__ . '/debug.php';

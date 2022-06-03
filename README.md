@@ -36,6 +36,10 @@ When I configure a production database locally, I want to be able to run `wp use
 
 * Unhook Jetpack SSO locally so that no attempt to use WordPress.com to sign-in is made.
 
+### Debug
+
+* Adds Xdebug related information to the Server section of the Site Health Info page.
+
 ## Other tools
 
 ### Proxy remote images
