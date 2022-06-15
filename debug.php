@@ -26,6 +26,8 @@ function filter_debug_information( $info ) {
 	$xdebug_mode  = ini_get( 'xdebug.mode' );
 	$xdebug_start = ini_get( 'xdebug.start_with_request' );
 	$xdebug_port  = ini_get( 'xdebug.client_port' );
+	$ini_file     = php_ini_loaded_file();
+	$ini_files    = php_ini_scanned_files();
 
 	$info['wp-server']['fields']['xdebug-mode'] = array(
 		'label' => 'Xdebug mode',
@@ -40,6 +42,16 @@ function filter_debug_information( $info ) {
 	$info['wp-server']['fields']['xdebug-port'] = array(
 		'label' => 'Xdebug port',
 		'value' => $xdebug_port ? $xdebug_port : 'Not set',
+	);
+
+	$info['wp-server']['fields']['ini-file'] = array(
+		'label' => 'PHP INI file',
+		'value' => $ini_file ? $ini_file : 'Not set',
+	);
+
+	$info['wp-server']['fields']['ini-files-extra'] = array(
+		'label' => 'INI files scaneed',
+		'value' => $ini_files ? $ini_files : 'Not set',
 	);
 
 	return $info;
